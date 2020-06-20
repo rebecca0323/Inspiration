@@ -10,6 +10,8 @@ import SwiftUI
 
 struct Register: View {
     
+    @ObservedObject var viewRouter: ViewRouter
+    
     @State var email: String = ""
     @State var password: String = ""
     @State var name: String = ""
@@ -70,6 +72,6 @@ struct Register: View {
 
 struct Register_Previews: PreviewProvider {
     static var previews: some View {
-        Register()
+        Register(viewRouter: ViewRouter())
     }
 }

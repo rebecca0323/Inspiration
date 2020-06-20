@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct Splash: View {
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
         ZStack(alignment: .top){
             Color(red: 1.0, green: 226/255, blue: 226/255).edgesIgnoringSafeArea(.all)
@@ -31,7 +33,7 @@ struct Splash: View {
                     .shadow(radius: 4.0)
                 Spacer()
                 Button(action: {
-                        
+                        self.viewRouter.currentPage = "Register"
                     }) {
                             Text("Register")
                                 .font(Font.custom("AvenirNext-Bold", size: 20))
@@ -54,6 +56,6 @@ struct Splash: View {
 
 struct Splash_Previews: PreviewProvider {
     static var previews: some View {
-        Splash()
+        Splash(viewRouter: ViewRouter())
     }
 }

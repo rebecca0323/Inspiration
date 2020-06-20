@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct Detected: View {
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
         ZStack(alignment: .top){
             Color(red: 1.0, green: 226/255, blue: 226/255).edgesIgnoringSafeArea(.all)
@@ -64,6 +66,6 @@ struct Detected: View {
 }
 struct Detected_Previews: PreviewProvider {
     static var previews: some View {
-        Detected()
+        Detected(viewRouter: ViewRouter())
     }
 }

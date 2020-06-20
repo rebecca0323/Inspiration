@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct SavedProfile: View {
+    
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
         ZStack{
             Color(red: 1.0, green: 226/255, blue: 226/255).edgesIgnoringSafeArea(.all)
@@ -73,6 +76,6 @@ struct SavedProfile: View {
 
 struct SavedProfile_Previews: PreviewProvider {
     static var previews: some View {
-        SavedProfile()
+        SavedProfile(viewRouter: ViewRouter())
     }
 }
