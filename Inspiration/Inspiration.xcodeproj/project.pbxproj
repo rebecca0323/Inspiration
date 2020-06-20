@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		B3464FD3249DCE9B006B5CDD /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FD2249DCE9B006B5CDD /* Splash.swift */; };
 		B3464FD5249DCEE9006B5CDD /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FD4249DCEE9006B5CDD /* Register.swift */; };
 		B3464FD9249DDD9A006B5CDD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FD8249DDD9A006B5CDD /* Home.swift */; };
+		B378E59A249E943B005F2A97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378E599249E943B005F2A97 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		B3464FD2249DCE9B006B5CDD /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		B3464FD4249DCEE9006B5CDD /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		B3464FD8249DDD9A006B5CDD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B378E599249E943B005F2A97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E10B33D8554F6357BD2E3C29 /* Pods_Inspiration_InspirationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inspiration_InspirationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87E81DB1942976F444ACA83 /* Pods-Inspiration-InspirationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inspiration-InspirationUITests.release.xcconfig"; path = "Target Support Files/Pods-Inspiration-InspirationUITests/Pods-Inspiration-InspirationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB40F0F252BDD5A3D018BD12 /* Pods-Inspiration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inspiration.release.xcconfig"; path = "Target Support Files/Pods-Inspiration/Pods-Inspiration.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +137,6 @@
 				27A9A13B84E7241FDF6C006D /* Pods-InspirationTests.debug.xcconfig */,
 				9A80A55889CB841AAA499E79 /* Pods-InspirationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -217,6 +218,7 @@
 			children = (
 				B3464FA3249DC6C2006B5CDD /* SceneDelegate.swift */,
 				B32AA016249E7E490021000F /* SessionStore.swift */,
+				B378E599249E943B005F2A97 /* User.swift */,
 				B3464FA5249DC6C2006B5CDD /* ContentView.swift */,
 				B32AA014249E7E240021000F /* ViewRouter.swift */,
 				B3464FD2249DCE9B006B5CDD /* Splash.swift */,
@@ -241,6 +243,7 @@
 				B3464F9B249DC6C1006B5CDD /* Frameworks */,
 				B3464F9C249DC6C1006B5CDD /* Resources */,
 				5EC00159F96A8CD1D219ED05 /* [CP] Embed Pods Frameworks */,
+				6B3B11BF8A36E838898BC46C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +282,7 @@
 				B3464FBC249DC6C8006B5CDD /* Frameworks */,
 				B3464FBD249DC6C8006B5CDD /* Resources */,
 				1E3371CFB6FC706519F93BAE /* [CP] Embed Pods Frameworks */,
+				8B61BAE252FF314B86560177 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,6 +403,40 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Inspiration/Pods-Inspiration-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6B3B11BF8A36E838898BC46C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inspiration/Pods-Inspiration-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inspiration/Pods-Inspiration-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Inspiration/Pods-Inspiration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B61BAE252FF314B86560177 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inspiration-InspirationUITests/Pods-Inspiration-InspirationUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Inspiration-InspirationUITests/Pods-Inspiration-InspirationUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Inspiration-InspirationUITests/Pods-Inspiration-InspirationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B38F8030E2BB79BDB7DC9C9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +518,7 @@
 				B32AA015249E7E240021000F /* ViewRouter.swift in Sources */,
 				B3464FD3249DCE9B006B5CDD /* Splash.swift in Sources */,
 				B3464FA6249DC6C2006B5CDD /* ContentView.swift in Sources */,
+				B378E59A249E943B005F2A97 /* User.swift in Sources */,
 				B3464FD9249DDD9A006B5CDD /* Home.swift in Sources */,
 				B32AA017249E7E490021000F /* SessionStore.swift in Sources */,
 				B3464FD5249DCEE9006B5CDD /* Register.swift in Sources */,
@@ -653,6 +692,7 @@
 				DEVELOPMENT_TEAM = C7GC432YM8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Inspiration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,7 +700,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.rebeccazhu.Inspiration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -674,6 +714,7 @@
 				DEVELOPMENT_TEAM = C7GC432YM8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Inspiration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,7 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.rebeccazhu.Inspiration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

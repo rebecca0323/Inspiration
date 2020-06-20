@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Register: View {
     
+    @ObservedObject var session: SessionStore
     @ObservedObject var viewRouter: ViewRouter
     
     @State var email: String = ""
@@ -46,7 +47,7 @@ struct Register: View {
                     .cornerRadius(30)
                     
                     Button(action: {
-                            
+                        self.signUp()
                         }) {
                                 Text("Register")
                                     .font(Font.custom("AvenirNext-Bold", size: 20))
@@ -65,6 +66,19 @@ struct Register: View {
     
     //Sign up
     func signUp() {
+        if !email.isEmpty && !password.isEmpty {
+            session.signUp(email: email, password: password) { (result, error) in
+                if error != nil {
+                    print("Error")
+                } else {
+                    self.email = ""
+                    self.password = ""
+                    self.name = ""
+                    self.group = ""
+                    self.viewRouter.currentPage = "Home"
+                }
+            }
+        }
     }
     
     
@@ -72,6 +86,6 @@ struct Register: View {
 
 struct Register_Previews: PreviewProvider {
     static var previews: some View {
-        Register(viewRouter: ViewRouter())
+        Register(session: SessionStore(), viewRouter: ViewRouter())
     }
 }

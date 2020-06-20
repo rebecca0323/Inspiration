@@ -17,7 +17,7 @@ struct ContentView: View {
             if viewRouter.currentPage == "Splash" {
                 Splash(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "Register" {
-                Register(viewRouter: viewRouter)
+                Register(session: session, viewRouter: viewRouter)
             } else if viewRouter.currentPage == "Home"{
                 Home(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "Detected"{

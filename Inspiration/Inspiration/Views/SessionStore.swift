@@ -19,7 +19,7 @@ class SessionStore: ObservableObject {
     var ref: DatabaseReference = Database.database().reference()
     
     //functions
-    /*func listen() {
+    func listen() {
         _ = Auth.auth().addStateDidChangeListener { (auth, user) in
             if let user = user {
                 self.session = User(uid: user.uid, displayName: user.displayName, email: user.email)
@@ -29,7 +29,7 @@ class SessionStore: ObservableObject {
                 self.session = nil
             }
         }
-    }*/
+    }
     
     //log in
     func logIn(email: String, password: String, handler: @escaping AuthDataResultCallback) {

@@ -12,6 +12,7 @@ target 'Inspiration' do
   pod 'Firebase/MLVisionObjectDetection'
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
+  pod 'GoogleMLKit/ImageLabeling'
 
   target 'InspirationTests' do
     inherit! :search_paths
