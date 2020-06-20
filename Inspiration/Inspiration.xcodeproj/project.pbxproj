@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32AA008249E62C90021000F /* Detected.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AA007249E62C90021000F /* Detected.swift */; };
+		B32AA00B249E64810021000F /* Bodoni.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B32AA00A249E64810021000F /* Bodoni.ttf */; };
+		B32AA00D249E65520021000F /* AvenirNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B32AA00C249E65520021000F /* AvenirNext-Regular.ttf */; };
+		B32AA00F249E671F0021000F /* Female.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AA00E249E671F0021000F /* Female.swift */; };
+		B32AA011249E78D60021000F /* SavedProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AA010249E78D60021000F /* SavedProfile.swift */; };
+		B32AA013249E7B580021000F /* Bodoni Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B32AA012249E7B580021000F /* Bodoni Bold.otf */; };
 		B3464FA2249DC6C2006B5CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FA1249DC6C2006B5CDD /* AppDelegate.swift */; };
 		B3464FA4249DC6C2006B5CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FA3249DC6C2006B5CDD /* SceneDelegate.swift */; };
 		B3464FA6249DC6C2006B5CDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464FA5249DC6C2006B5CDD /* ContentView.swift */; };
@@ -38,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B32AA007249E62C90021000F /* Detected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detected.swift; sourceTree = "<group>"; };
+		B32AA00A249E64810021000F /* Bodoni.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bodoni.ttf; path = ../../../../../Downloads/OnlineWebFonts_COM_ca8604989ce89d9d77599a399ae040bc/Bodoni/Bodoni.ttf; sourceTree = "<group>"; };
+		B32AA00C249E65520021000F /* AvenirNext-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirNext-Regular.ttf"; path = "../../../../../Downloads/AvenirNext-Regular.ttf"; sourceTree = "<group>"; };
+		B32AA00E249E671F0021000F /* Female.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Female.swift; sourceTree = "<group>"; };
+		B32AA010249E78D60021000F /* SavedProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProfile.swift; sourceTree = "<group>"; };
+		B32AA012249E7B580021000F /* Bodoni Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bodoni Bold.otf"; path = "../../../../../Downloads/Bodoni Bold/Bodoni Bold.otf"; sourceTree = "<group>"; };
 		B3464F9E249DC6C2006B5CDD /* Inspiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspiration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3464FA1249DC6C2006B5CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3464FA3249DC6C2006B5CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B32AA009249E646E0021000F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B32AA00A249E64810021000F /* Bodoni.ttf */,
+				B32AA00C249E65520021000F /* AvenirNext-Regular.ttf */,
+				B32AA012249E7B580021000F /* Bodoni Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B3464F95249DC6C1006B5CDD = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				B3464FA1249DC6C2006B5CDD /* AppDelegate.swift */,
+				B32AA009249E646E0021000F /* Fonts */,
 				B3464FA3249DC6C2006B5CDD /* SceneDelegate.swift */,
 				B3464FA5249DC6C2006B5CDD /* ContentView.swift */,
 				B3464FD1249DCE80006B5CDD /* Views */,
@@ -149,6 +172,9 @@
 				B3464FD2249DCE9B006B5CDD /* Splash.swift */,
 				B3464FD4249DCEE9006B5CDD /* Register.swift */,
 				B3464FD8249DDD9A006B5CDD /* Home.swift */,
+				B32AA007249E62C90021000F /* Detected.swift */,
+				B32AA00E249E671F0021000F /* Female.swift */,
+				B32AA010249E78D60021000F /* SavedProfile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3464FAE249DC6C8006B5CDD /* LaunchScreen.storyboard in Resources */,
+				B32AA00B249E64810021000F /* Bodoni.ttf in Resources */,
+				B32AA013249E7B580021000F /* Bodoni Bold.otf in Resources */,
 				B3464FAB249DC6C8006B5CDD /* Preview Assets.xcassets in Resources */,
+				B32AA00D249E65520021000F /* AvenirNext-Regular.ttf in Resources */,
 				B3464FA8249DC6C8006B5CDD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32AA011249E78D60021000F /* SavedProfile.swift in Sources */,
+				B32AA008249E62C90021000F /* Detected.swift in Sources */,
+				B32AA00F249E671F0021000F /* Female.swift in Sources */,
 				B3464FA2249DC6C2006B5CDD /* AppDelegate.swift in Sources */,
 				B3464FA4249DC6C2006B5CDD /* SceneDelegate.swift in Sources */,
 				B3464FD3249DCE9B006B5CDD /* Splash.swift in Sources */,
