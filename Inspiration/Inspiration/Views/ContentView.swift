@@ -21,9 +21,9 @@ struct ContentView: View {
             } else if viewRouter.currentPage == "Home"{
                 Home(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "Detected"{
-                Detected(viewRouter: viewRouter)
+                Detected(viewRouter: viewRouter, detected_obj: viewRouter.message, deets: viewRouter.details)
             } else if viewRouter.currentPage == "Female"{
-                Female(viewRouter: viewRouter)
+                Female(viewRouter: viewRouter, name: viewRouter.name, img_src: viewRouter.img_name, accomplishments: viewRouter.accomplishments, wht_to_do: viewRouter.wht_to_do)
             } else if viewRouter.currentPage == "Saved Profile"{
                 SavedProfile(viewRouter: viewRouter)
             }
@@ -33,6 +33,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
      static var previews: some View {
-              ContentView(viewRouter: ViewRouter(), session: SessionStore())
+        ContentView(viewRouter: ViewRouter(), session: SessionStore())
           }
 }

@@ -10,6 +10,10 @@ import SwiftUI
 
 struct Female: View {
     @ObservedObject var viewRouter: ViewRouter
+    var name: String
+    var img_src: String
+    var accomplishments: String
+    var wht_to_do: String
     
     var body: some View {
             ZStack(alignment: .top){
@@ -21,11 +25,11 @@ struct Female: View {
                         .padding(.bottom, 7)
                         .overlay(
                             VStack{
-                                Text("Mary Jackson").font(Font.custom("Bodoni", size: 50))
+                                Text("\(name)").font(Font.custom("Bodoni", size: 50))
                                     .foregroundColor(Color(red: 83/255, green: 0/255, blue: 103/255))
                                     .multilineTextAlignment(.leading)
                                 
-                                Image("cs")
+                                Image("\(img_src)")
                             }.edgesIgnoringSafeArea(.all)
                     )
                     
@@ -38,6 +42,9 @@ struct Female: View {
                                     VStack{
                                         Text("Accomplishments").font(Font.custom("Bodoni", size: 30))
                                         .foregroundColor(Color(red: 1.0, green: 226/255, blue: 226/255))
+                                        Text("\(accomplishments)").font(Font.custom("AvenirNext-Regular", size: 15)).multilineTextAlignment(.leading).padding(.leading, 50)
+                                            .padding(.trailing, 50).padding(.top, 10)
+                                        .foregroundColor(Color(red: 1.0, green: 226/255, blue: 226/255))
                                     }
                             )
                             
@@ -49,6 +56,11 @@ struct Female: View {
                                     VStack{
                                         Text("What you can do:").font(Font.custom("Bodoni", size: 30))
                                         .foregroundColor(Color(red: 1.0, green: 226/255, blue: 226/255))
+                                        Text("""
+                                        \(wht_to_do)
+                                        """).font(Font.custom("AvenirNext-Regular", size: 15)).multilineTextAlignment(.leading).padding(.leading, 50)
+                                            .padding(.trailing, 50).padding(.top, 10)
+                                        .foregroundColor(Color(red: 1.0, green: 226/255, blue: 226/255))
                                     }
                             )
                             
@@ -57,7 +69,7 @@ struct Female: View {
                     
                     HStack{
                         Button(action: {
-                            
+                            self.viewRouter.currentPage = "Home"
                         }) {
                                 Text("SAVE").font(Font.custom("Bodoni", size: 20))
                                 .foregroundColor(Color(red: 133/255, green: 51/255, blue: 153/255))
@@ -74,6 +86,6 @@ struct Female: View {
 
 struct Female_Previews: PreviewProvider {
     static var previews: some View {
-        Female(viewRouter: ViewRouter())
+        Female(viewRouter: ViewRouter(), name: "", img_src: "", accomplishments: "", wht_to_do: "")
     }
 }

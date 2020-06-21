@@ -13,9 +13,47 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     
     let objectWillChange = PassthroughSubject<ViewRouter,Never>()
+    //FOR sending data between views!
     
+    //Starting page
     var currentPage: String = "Splash" {
         didSet {
+            objectWillChange.send(self)
+        }
+    }
+    
+    var message: String = "" {
+        didSet{
+            objectWillChange.send(self)
+        }
+    }
+    
+    var details: String = "" {
+        didSet{
+            objectWillChange.send(self)
+        }
+    }
+    
+    var name: String = ""{
+        didSet{
+            objectWillChange.send(self)
+        }
+    }
+    
+    var img_name: String = "" {
+        didSet{
+            objectWillChange.send(self)
+        }
+    }
+    
+    var accomplishments: String = "" {
+        didSet{
+            objectWillChange.send(self)
+        }
+    }
+    
+    var wht_to_do: String = "" {
+        didSet{
             objectWillChange.send(self)
         }
     }

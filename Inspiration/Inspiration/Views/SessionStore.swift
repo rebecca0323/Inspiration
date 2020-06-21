@@ -51,8 +51,7 @@ class SessionStore: ObservableObject {
     func addToGroup(){
         if Auth.auth().currentUser != nil{
             let uid = Auth.auth().currentUser?.uid
-            self.ref.child("Groups").child("Metrohacks").child(uid ?? "error").setValue(["id": uid])
-            self.ref.child("Groups").child("Metrohacks").child("Streak").setValue(["Streak": "5 days"])
+            self.ref.child("Users").child(uid ?? "error").setValue(["id": uid])
         }
     }
     
