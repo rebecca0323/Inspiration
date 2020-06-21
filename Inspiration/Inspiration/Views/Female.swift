@@ -76,7 +76,15 @@ struct Female: View {
                             
                         }
                         Spacer()
+                        Button(action: {
+                            self.viewRouter.currentPage = "Home"
+                        }) {
+                                Text("HOME").font(Font.custom("Bodoni", size: 20))
+                                .foregroundColor(Color(red: 133/255, green: 51/255, blue: 153/255))
+                            
+                        }
                     }.padding(.leading, 30)
+                        .padding(.trailing, 30)
                     
                 }.padding(.top, 50)
             }

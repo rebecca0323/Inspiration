@@ -156,10 +156,6 @@ struct Home: View {
             
             for label in labels {
                 let labelText = label.text
-                _ = label.confidence
-                _ = label.index
-                
-                print(labelText)
                 
                 if(labelText == "Television"){
                     self.viewRouter.message = "Laptop"
